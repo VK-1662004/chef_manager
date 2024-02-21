@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url("./img/food img.jpg");
+    background-size: repeat;
+    height: 100vh; /* Set body height to fill viewport */
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, content, footer */
+    min-height: 100vh; 
+}
+
+.home {
+    width: 100%;
+    max-height: 100vh;
+    background-image: url("/img/food img.jpg"); /* Fixed typo */
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+}
+.log{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.h1{
+    font-size: 33px;
+}
+.log img{
+    width: 109px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 0px 40px;
+    box-shadow: 10px 10px 10px lightgray;
+}
+
+.footer {
+    padding: 2% 0%;
+    background-color: rgb(239, 220, 196);
+    font-size: 17px;
+    max-width: 100%;
+    display: flex;
+    line-height: 25px;
+}
+
+.follow1 {
+    width: 65%;
+    padding-left: 7%;
+}
+
+a {
+    padding: 5px 30px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: salmon;
+}
+
+.social-icons .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.8;
+}
+
+.fa-facebook {
+    background-color: rgb(239, 220, 196);
+    color: brown;
+}
+
+.fa-twitter {
+    background-color: rgb(239, 220, 196);
+    color: brown;
+}
+
+.fa-instagram {
+    background-color: rgb(239, 220, 196);
+    color: brown;
+}
+
+.fa-youtube {
+    background-color: rgb(239, 220, 196);
+    color: brown;
+}
+
+container {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 229px;
+    height: 161px;
+    border-radius: 20px;
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s; /* Add transition effect */
+    overflow: hidden; /* Hide any overflow content */
+    cursor: pointer;
+}
+
+
+.button:hover {
+    background-color: #333; /* Darken the background color on hover */
+    transform: scale(1.05); /* Scale the button slightly on hover */
+}
+
+
+.button a{
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color from parent */
+}
+
+
+#button-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%; /* Ensure the container spans the entire width */
+    margin-top: 20px; /* Adjust margin as needed */
+    padding-top: 201px;
+}
+button{
+    margin-top:7%;
+    height: 180px;
+    width: 70%;
+    cursor: pointer;
+    background:rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    font-size: 20px;
+    color:antiquewhite;
+    border-radius: 75px;
+    overflow: visible;
+    line-height:290px;
+}
+button:hover{
+    background-color:rgba(0, 0, 0, 0.548);
+    color:white;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+.options {
+    display: none;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.options h3, .options h4 {
+    margin-bottom: 10px;
+}
+
+.options .category {
+    margin-bottom: 15px;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.options label {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.choose_boxes{
+    justify-content: center;
+    display: flex;
+    display: inline-flex;
+}
+.choose_boxes{
+        column-gap: 184px;
+}
