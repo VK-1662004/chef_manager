@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="clickSound">
+        <source src="audio/click-mouse.mp3" type="audio/mpeg">
+    </audio>
+    <div class="header">
+        <div class="log">
+            <img src="/img/logo_chefmanager.png" alt="">
+            <h1>Chef_Manager</h1>
+        </div>
+        <div class="nav">
+        <a href="#">Home</a>    
+        <a href="#about">About us</a>
+        <a href="#footer">Contact us</a>
+        <a href="#">Login</a>
+        <a href="#">Sign up</a>
+        </div>
+    </div>
+    <div id="container">
+        <div id="button-container">
+            <div class="button" id="div1" onclick="toggleOptions('breakfastOptions')">Breakfast</div>
+            <div class="button" id="div2" onclick="toggleOptions('lunchOptions')">Lunch</div>
+            <div class="button" id="div3" onclick="toggleOptions('dinnerOptions')">Dinner</div>
+        </div>
+    </div>
+    <div class="choose_boxes">
+    <div class="options" id="breakfastOptions">
+        <h3>Choose your today's Breakfast!</h3>
+        <div class="category">
+            <h4>Vegetarian</h4>
+            <input type="checkbox" id="option3" name="breakfast" value="Poha">
+            <label for="option3">Poha</label><br>
+            <input type="checkbox" id="option3" name="breakfast" value="Misal Pav">
+            <label fo
+        </div>
+        <div class="category">
+            <h4>Non-Vegetarian</h4>
+            <input type="checkbox" id="option4" name="breakfast" value="Omelet Bread">
+            <label for="option4">Omelet Bread</label><br>
+            <input type="checkbox" id="option4" name="breakfast" value="Anda Bhurji">
+            <label for="option4">Anda Bhurji</label><br>
+        </div>
+    </div>
+    
+    
+    <div class="options" id="lunchOptions">
+        <h3>Choose your today's Lunch!</h3>
+        <div class="category">
+            <h4>Vegetarian</h4>
+            <input type="checkbox" id="option3" name="lunch" value="">
+            <label for="option3">Poha</label><br>
+            <input type="checkbox" id="option3" name="lunch" value="Misal Pav">
+            <label for="option3">Misal Pav</label><br>
+        </div>
+        <div class="category">
+            <h4>Non-Vegetarian</h4>
+            <input type="checkbox" id="option4" name="lunch" value="Omelet Bread">
+            <label for="option4">Omelet Bread</label><br>
+            <input type="checkbox" id="option4" name="lunch" value="Anda Bhurji">
+            <label for="option4">Anda Bhurji</label><br>
+        </div>
+    </div>
+    
+    <div class="options" id="dinnerOptions">
+        <h3>Choose your today's Dinner!</h3>
+        <div class="category">
+            <h4>Vegetarian</h4>
+            <input type="checkbox" id="option5" name="dinner" value="Pulav">
+            <label for="option5">Pulav</label><br>
+            <input type="checkbox" id="option5" name="dinner" value="Panner Gravy">
+            <label for="option5">Panner Gravy</label><br>
+        </div>
+        <div class="category">
+            <h4>Non-Vegetarian</h4>
+            <input type="checkbox" id="option6" name="dinner" value="Biryani">
+            <label for="option6">Biryani</label><br>
+            <input type="checkbox" id="option6" name="dinner" value="Chicken Gravy">
+            <label for="option6">Chicken Gravy</label><br>
+        </div>
+    </div>
+    </div>
+    <!-- <div class="footer" id="footer">
+        <div class="follow1">
+            <b>College Address</b>=Dr. K. M. Vasudevan Pillai Campus, 
+            <br>Plot No. 10, Sector 16, New Panvel East, <br>Panvel, Navi Mumbai, Maharashtra 410206<br>Hostel Address=Pillai Girls Hostel
+            <br>Plot No. 10, Sector 16, New Panvel East, <br>Panvel, Navi Mumbai, Maharashtra 410206<br><b>Hostel Address</b>=Pillai Girls Hostel
+            <br>Plot No. 21, Sector 16
+            <br>New Panvel, Navi Mumbai - 410206<br>
+            <b>Contact details:</b>
+            @@ -49,5 +63,7 @@ <h1>About us</h1><br>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>  
+        </div>
+    </div> -->
+    
+    <script src="script.js"></script>
+</body>
+
+</html> 
+
